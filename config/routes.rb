@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :posts, only: [:index]
 
   namespace :admin do
-    resources :post, only: [:new, :create, :edit, :destroy]
+    resources :posts, only: [:new, :create, :edit, :destroy]
   end
 end
