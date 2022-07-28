@@ -13,8 +13,6 @@
   <div>
     <% if user_signed_in? && current_user.admin? %>
       <%= link_to '管理者投稿フォーム', new_admin_post_path %>
-    <% else %>
-      <% render :index %>
     <% end %>
   </div>
 

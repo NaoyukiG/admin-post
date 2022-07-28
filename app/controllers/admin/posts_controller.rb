@@ -21,6 +21,6 @@ class Admin::PostsController < ApplicationController
   end
 
   def post_params
-    params.rewuire(:post).permit(:text).merge(user_id: current_user.id)
+    params.require(:post).permit(:text).merge(user_id: current_user.id)
   end
 end
